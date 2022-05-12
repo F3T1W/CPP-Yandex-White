@@ -1,6 +1,8 @@
-using namespace std;
+#include "APlusB.h"
 
-int main()
+int main(void)
 {
-	return 0;
+	int x, y;
+	std::cin >> x >> y;
+	APlusB::Plus(x, y);
 }
