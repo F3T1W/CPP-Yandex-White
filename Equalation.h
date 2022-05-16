@@ -12,9 +12,8 @@ public:
 	{
 		if (a != 0)
 		{
-			double y, z;
-			y = (-b + std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a);
-			z = (-b - std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a);
+			double y = (-b + std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a);
+			double z = (-b - std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a);
 			
 			if (isnan(y) || isnan(z))
 			{
@@ -23,23 +22,22 @@ public:
 			}
 			if (z != y)
 			{
-				std::string x = std::to_string((-b + std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a)) + " " + std::to_string((-b - std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a));
-				std::cout << ((-b + std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a)) << " " << ((-b - std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a));
-				return x; // TODO сократить икс и возврат и сделать правильный возврат
+				std::cout << y << " " << z;
+				return std::to_string(y) + " " + std::to_string(z);
 			}
 			else
 			{
-				std::string x = std::to_string((-b - std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a));
-				std::cout << ((-b - std::sqrt(std::pow(b, 2) - (4 * a * c))) / (2 * a));
-				return x;
+				std::cout << z;
+				return std::to_string(z);
 			}
 		}
 		else
 		{
+			double notNullB = -c / b;
 			if (b != 0)
 			{
-				std::cout << std::to_string(-c / b);
-				return std::to_string(- c / b);
+				std::cout << std::to_string(notNullB);
+				return std::to_string(notNullB);
 			}
 			else
 			{
