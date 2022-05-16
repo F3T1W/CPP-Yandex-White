@@ -1,8 +1,7 @@
-#include "APlusB.h"
+#include "Equalation.h"
+#include <vector>
 
 int main(void)
 {
-	int x, y;
-	std::cin >> x >> y;
-	APlusB::Plus(x, y);
+	std::string x = Equalation::Calculate(0, 4, 10);
 }

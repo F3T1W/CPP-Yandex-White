@@ -141,9 +141,13 @@
   <ItemGroup>
     <ClCompile Include="APlusB.cpp" />
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="Equalation.cpp" />
+    <ClCompile Include="MinLine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="APlusB.h" />
+    <ClInclude Include="Equalation.h" />
+    <ClInclude Include="MinLine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
