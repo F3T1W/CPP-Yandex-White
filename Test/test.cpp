@@ -5,6 +5,7 @@
 #include <../../../../../../CPP-Yandex-White/Equalation.h>
 #include <../../../../../../CPP-Yandex-White/Division.h>
 #include <../../../../../../CPP-Yandex-White/CalculatePrice.h>
+#include <../../../../../../CPP-Yandex-White/EvenNumbers.h>
 
 
 #pragma region cplusb
@@ -84,6 +85,7 @@ TEST(DIVIDE, DIVIDE2)
 #pragma endregion
 
 #pragma region CalculatePrice
+/*
 TEST(CALCULATEPRICE, CALCULATEPRICE0)
 {
 	EXPECT_EQ(true, CalculatePrice::Calculate(100, 110, 120, 5, 10) == "100.000000");
@@ -97,5 +99,23 @@ TEST(CALCULATEPRICE, CALCULATEPRICE1)
 TEST(CALCULATEPRICE, CALCULATEPRICE2)
 {
 	EXPECT_EQ(true, CalculatePrice::Calculate(150, 110, 120, 5, 12.5) == "131.250000");
+}
+*/
+#pragma endregion
+
+#pragma region CheckEven
+TEST(CHECKEVEN, CHECKEVEN0)
+{
+	EXPECT_EQ(true, EvenNumbers::IsEven(1, 10) == "2 4 6 8 10");
+}
+
+TEST(CHECKEVEN, CHECKEVEN1)
+{
+	EXPECT_EQ(true, EvenNumbers::IsEven(2, 3) == "2");
+}
+
+TEST(CHECKEVEN, CHECKEVEN2)
+{
+	EXPECT_EQ(true, EvenNumbers::IsEven(9, 11) == "10");
 }
 #pragma endregion

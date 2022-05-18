@@ -144,6 +144,7 @@
     <ClCompile Include="CalculatePrice.cpp" />
     <ClCompile Include="Division.cpp" />
     <ClCompile Include="Equalation.cpp" />
+    <ClCompile Include="EvenNumbers.cpp" />
     <ClCompile Include="MinLine.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +152,7 @@
     <ClInclude Include="CalculatePrice.h" />
     <ClInclude Include="Division.h" />
     <ClInclude Include="Equalation.h" />
+    <ClInclude Include="EvenNumbers.h" />
     <ClInclude Include="MinLine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

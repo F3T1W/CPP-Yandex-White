@@ -1,32 +1,33 @@
 #include <string>
 #include <iostream>
-
-static std::string Calculate(float n, float a, float b, float x, float y);
+static std::string IsEven(short x, short y);
 
 int main(void)
 {
-	float n, a, b, x, y;
-	std::cin >> n >> a >> b >> x >> y;
-	Calculate(n, a, b, x, y);
+	short x, y;
+	std::cin >> x >> y;
+	IsEven(x, y);
 }
 
-static std::string Calculate(float n, float a, float b, float x, float y)
+static std::string IsEven(short x, short y)
 {
-	if (n > b)
+	std::string ret;
+	for (int i = x; i <= y; i++)
 	{
-		n -= ((n * y) / 100);
-		std::cout << n << std::endl;
-		return std::to_string(n);
+		if (i % 2 == 0)
+		{
+			if (ret == "")
+			{
+				ret += std::to_string(i);
+				std::cout << i;
+			}
+			else
+			{
+				ret += " " + std::to_string(i);
+				std::cout << " " << i;
+			}
+
+		}
 	}
-	else if (n > a)
-	{
-		n -= ((n * x) / 100);
-		std::cout << n << std::endl;
-		return std::to_string(n);
-	}
-	else
-	{
-		std::cout << n;
-		return std::to_string(n);
-	}
+	return ret;
 }
