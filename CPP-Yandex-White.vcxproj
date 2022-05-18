@@ -141,11 +141,15 @@
   <ItemGroup>
     <ClCompile Include="APlusB.cpp" />
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="CalculatePrice.cpp" />
+    <ClCompile Include="Division.cpp" />
     <ClCompile Include="Equalation.cpp" />
     <ClCompile Include="MinLine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="APlusB.h" />
+    <ClInclude Include="CalculatePrice.h" />
+    <ClInclude Include="Division.h" />
     <ClInclude Include="Equalation.h" />
     <ClInclude Include="MinLine.h" />
   </ItemGroup>

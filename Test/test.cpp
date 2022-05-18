@@ -3,6 +3,8 @@
 #include <../../../../../../CPP-Yandex-White/APlusB.h>
 #include <../../../../../../CPP-Yandex-White/MinLine.h>
 #include <../../../../../../CPP-Yandex-White/Equalation.h>
+#include <../../../../../../CPP-Yandex-White/Division.h>
+#include <../../../../../../CPP-Yandex-White/CalculatePrice.h>
 
 
 #pragma region cplusb
@@ -39,7 +41,7 @@ TEST(FINDMIN, FINDMIN2)
 #pragma endregion
 
 #pragma region Calculate
-
+/*
 TEST(CALCULATE, CALCULATE0)
 {
 	EXPECT_EQ(true, Equalation::Calculate(2, 5, 2) == "-0.500000 -2.000000");
@@ -59,5 +61,41 @@ TEST(CALCULATE, CALCULATE3)
 {
 	EXPECT_EQ(true, Equalation::Calculate(0, 4, 10) == "-2.500000");
 }
+*/
+#pragma endregion
 
+#pragma region Divide
+/*
+TEST(DIVIDE, DIVIDE0)
+{
+	EXPECT_EQ(true, Division::Divide(10, 2) == "5");
+}
+
+TEST(DIVIDE, DIVIDE1)
+{
+	EXPECT_EQ(true, Division::Divide(3, 5) == "0");
+}
+
+TEST(DIVIDE, DIVIDE2)
+{
+	EXPECT_EQ(true, Division::Divide(11, 0) == "Impossible");
+}
+*/
+#pragma endregion
+
+#pragma region CalculatePrice
+TEST(CALCULATEPRICE, CALCULATEPRICE0)
+{
+	EXPECT_EQ(true, CalculatePrice::Calculate(100, 110, 120, 5, 10) == "100.000000");
+}
+
+TEST(CALCULATEPRICE, CALCULATEPRICE1)
+{
+	EXPECT_EQ(true, CalculatePrice::Calculate(115, 110, 120, 5, 10) == "109.250000");
+}
+
+TEST(CALCULATEPRICE, CALCULATEPRICE2)
+{
+	EXPECT_EQ(true, CalculatePrice::Calculate(150, 110, 120, 5, 12.5) == "131.250000");
+}
 #pragma endregion
