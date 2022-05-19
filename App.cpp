@@ -1,33 +1,22 @@
-#include <string>
 #include <iostream>
-static std::string IsEven(short x, short y);
+
+void MaxDivider();
 
 int main(void)
 {
-	short x, y;
-	std::cin >> x >> y;
-	IsEven(x, y);
+    MaxDivider();
 }
 
-static std::string IsEven(short x, short y)
-{
-	std::string ret;
-	for (int i = x; i <= y; i++)
-	{
-		if (i % 2 == 0)
-		{
-			if (ret == "")
-			{
-				ret += std::to_string(i);
-				std::cout << i;
-			}
-			else
-			{
-				ret += " " + std::to_string(i);
-				std::cout << " " << i;
-			}
+void MaxDivider() {
 
-		}
-	}
-	return ret;
+    int a, b;
+    std::cin >> a >> b;
+    while (b) {
+        a %= b;
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    std::cout << a << std::endl;
 }

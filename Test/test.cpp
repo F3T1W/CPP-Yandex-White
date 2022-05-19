@@ -6,6 +6,7 @@
 #include <../../../../../../CPP-Yandex-White/Division.h>
 #include <../../../../../../CPP-Yandex-White/CalculatePrice.h>
 #include <../../../../../../CPP-Yandex-White/EvenNumbers.h>
+#include <../../../../../../CPP-Yandex-White/SecondF.h>
 
 
 #pragma region cplusb
@@ -104,6 +105,7 @@ TEST(CALCULATEPRICE, CALCULATEPRICE2)
 #pragma endregion
 
 #pragma region CheckEven
+/*
 TEST(CHECKEVEN, CHECKEVEN0)
 {
 	EXPECT_EQ(true, EvenNumbers::IsEven(1, 10) == "2 4 6 8 10");
@@ -117,5 +119,23 @@ TEST(CHECKEVEN, CHECKEVEN1)
 TEST(CHECKEVEN, CHECKEVEN2)
 {
 	EXPECT_EQ(true, EvenNumbers::IsEven(9, 11) == "10");
+}
+*/
+#pragma endregion
+
+#pragma region FInjection
+TEST(SECONDF, SECONDF0)
+{
+	EXPECT_EQ(true, SecondF::FindSecond("comfort") == -1);
+}
+
+TEST(SECONDF, SECONDF1)
+{
+	EXPECT_EQ(true, SecondF::FindSecond("coffee") == 3);
+}
+
+TEST(SECONDF, SECONDF2)
+{
+	EXPECT_EQ(true, SecondF::FindSecond("car") == -2);
 }
 #pragma endregion
