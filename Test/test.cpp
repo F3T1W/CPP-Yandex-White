@@ -8,6 +8,7 @@
 #include <../../../../../../CPP-Yandex-White/EvenNumbers.h>
 #include <../../../../../../CPP-Yandex-White/SecondF.h>
 #include <../../../../../../CPP-Yandex-White/MaxDivider.h>
+#include <../../../../../../CPP-Yandex-White/BinaryDigit.h>
 
 
 #pragma region cplusb
@@ -144,7 +145,7 @@ TEST(SECONDF, SECONDF2)
 #pragma endregion
 
 #pragma region FindMaxDivider
-
+/*
 TEST(MAXDIVIDER, MAXDIVIDER0)
 {
 	EXPECT_EQ(true, MaxDividerFinder::MaxDivider(25, 27) == 1);
@@ -159,5 +160,24 @@ TEST(MAXDIVIDER, MAXDIVIDER2)
 {
 	EXPECT_EQ(true, MaxDividerFinder::MaxDivider(13, 13) == 13);
 }
-
+*/
 #pragma endregion 
+
+#pragma region BinaryFinder
+/*
+TEST(BINARYDIGIT, BINARYDIGIT0)
+{
+	EXPECT_EQ(true, BinaryDigit::Binary(5) == "101");
+}
+
+TEST(BINARYDIGIT, BINARYDIGIT1)
+{
+	EXPECT_EQ(true, BinaryDigit::Binary(32) == "100000");
+}
+
+TEST(BINARYDIGIT, BINARYDIGIT2)
+{
+	EXPECT_EQ(true, BinaryDigit::Binary(1) == "1");
+}
+*/
+#pragma endregion
