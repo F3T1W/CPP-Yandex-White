@@ -4,18 +4,17 @@
 class MaxDividerFinder
 {
 public:
-	static void MaxDivider(long a, long b)
+	static short MaxDivider(short a, short b)
 	{
-        int A, B;
-        std::cin >> A >> B;
-        while (B) {
-            A %= B;
-            int buff = A;
-            A = B;
-            B = buff;
+        while (b) {
+            a %= b;
+            int temp = a;
+            a = b;
+            b = temp;
         }
 
-        std::cout << A << std::endl;
-	}
+        std::cout << a << std::endl;
+        return a;
+    }
 };
 

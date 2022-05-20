@@ -7,6 +7,7 @@
 #include <../../../../../../CPP-Yandex-White/CalculatePrice.h>
 #include <../../../../../../CPP-Yandex-White/EvenNumbers.h>
 #include <../../../../../../CPP-Yandex-White/SecondF.h>
+#include <../../../../../../CPP-Yandex-White/MaxDivider.h>
 
 
 #pragma region cplusb
@@ -124,6 +125,7 @@ TEST(CHECKEVEN, CHECKEVEN2)
 #pragma endregion
 
 #pragma region FInjection
+/*
 TEST(SECONDF, SECONDF0)
 {
 	EXPECT_EQ(true, SecondF::FindSecond("comfort") == -1);
@@ -138,4 +140,24 @@ TEST(SECONDF, SECONDF2)
 {
 	EXPECT_EQ(true, SecondF::FindSecond("car") == -2);
 }
+*/
 #pragma endregion
+
+#pragma region FindMaxDivider
+
+TEST(MAXDIVIDER, MAXDIVIDER0)
+{
+	EXPECT_EQ(true, MaxDividerFinder::MaxDivider(25, 27) == 1);
+}
+
+TEST(MAXDIVIDER, MAXDIVIDER1)
+{
+	EXPECT_EQ(true, MaxDividerFinder::MaxDivider(12, 16) == 4);
+}
+
+TEST(MAXDIVIDER, MAXDIVIDER2)
+{
+	EXPECT_EQ(true, MaxDividerFinder::MaxDivider(13, 13) == 13);
+}
+
+#pragma endregion 
