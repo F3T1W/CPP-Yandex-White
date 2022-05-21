@@ -1,0 +1,1 @@
+#include "FactorialTask.h"

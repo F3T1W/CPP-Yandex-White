@@ -139,7 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="App.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="FactorialTask.cpp" />
+    <ClCompile Include="PalindromTask.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FactorialTask.h" />
+    <ClInclude Include="PalindromTask.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
