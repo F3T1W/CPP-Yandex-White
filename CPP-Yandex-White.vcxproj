@@ -142,10 +142,12 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="FactorialTask.cpp" />
     <ClCompile Include="PalindromTask.cpp" />
+    <ClCompile Include="VectorPalindrom.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FactorialTask.h" />
     <ClInclude Include="PalindromTask.h" />
+    <ClInclude Include="VectorPalindrom.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

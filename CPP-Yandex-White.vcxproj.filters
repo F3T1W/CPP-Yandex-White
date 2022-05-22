@@ -24,12 +24,18 @@
     <ClCompile Include="PalindromTask.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="VectorPalindrom.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FactorialTask.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="PalindromTask.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorPalindrom.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
