@@ -148,6 +148,7 @@
     <ClCompile Include="MaximizatorTask.cpp" />
     <ClCompile Include="MiddleTemperatureTask.cpp" />
     <ClCompile Include="PalindromTask.cpp" />
+    <ClCompile Include="QueueTask.cpp" />
     <ClCompile Include="ReverseVector.cpp" />
     <ClCompile Include="ReverseVector2.cpp" />
     <ClCompile Include="VectorMoving.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="MaximizatorTask.h" />
     <ClInclude Include="MiddleTemperatureTask.h" />
     <ClInclude Include="PalindromTask.h" />
+    <ClInclude Include="QueueTask.h" />
     <ClInclude Include="ReverseVector.h" />
     <ClInclude Include="ReverseVector2.h" />
     <ClInclude Include="VectorMoving.h" />

@@ -1,3 +1,5 @@
+#pragma region Includes&Namespaces
+
 #include <gtest/gtest.h>
 
 #include "pch.h"
@@ -18,7 +20,11 @@
 
 #include "../../CPP-Yandex-White/MiddleTemperatureTask.h"
 
+#include "../../CPP-Yandex-White/QueueTask.h"
+
 using namespace std;
+
+#pragma endregion
 
 #pragma region Factorial
 /*
@@ -145,12 +151,26 @@ TEST(REVERSEVECTOR2, REVERSEVECTOR2_0)
 #pragma endregion
 
 #pragma region MiddleTemperature
-
+/*
 TEST(MIDDLETEMPERATURE, MIDDLETEMPERATURE0)
 {
 	int i = 5;
 	vector<int> arr = { 7, 6, 0, 3, 9 };
 	EXPECT_EQ(true, MiddleTemperatureTask::MiddleTemperatureTest(i, arr) == "3014");
 }
+*/
+#pragma endregion
 
+#pragma region Queue
+/*
+TEST(QUEUE, QUEUE0)
+{
+	streambuf* backup;
+	istringstream oss("8 COME 5 WORRY 1 WORRY 4 COME -2 WORRY_COUNT COME 3 WORRY 3 WORRY_COUNT");
+	backup = cin.rdbuf();
+	cin.rdbuf(oss.rdbuf());
+	string check = QueueTask::QueueTest();
+	EXPECT_EQ(true, check == "12");
+}
+*/
 #pragma endregion
