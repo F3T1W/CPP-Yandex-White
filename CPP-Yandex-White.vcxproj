@@ -116,6 +116,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +132,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,12 +145,22 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="FactorialTask.cpp" />
+    <ClCompile Include="MaximizatorTask.cpp" />
+    <ClCompile Include="MiddleTemperatureTask.cpp" />
     <ClCompile Include="PalindromTask.cpp" />
+    <ClCompile Include="ReverseVector.cpp" />
+    <ClCompile Include="ReverseVector2.cpp" />
+    <ClCompile Include="VectorMoving.cpp" />
     <ClCompile Include="VectorPalindrom.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FactorialTask.h" />
+    <ClInclude Include="MaximizatorTask.h" />
+    <ClInclude Include="MiddleTemperatureTask.h" />
     <ClInclude Include="PalindromTask.h" />
+    <ClInclude Include="ReverseVector.h" />
+    <ClInclude Include="ReverseVector2.h" />
+    <ClInclude Include="VectorMoving.h" />
     <ClInclude Include="VectorPalindrom.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
