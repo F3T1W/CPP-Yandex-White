@@ -12,12 +12,15 @@ private:
 public:
 	static void DoIt()
 	{
-		int count; cin >> count;
+		int count; cin >> count; //Кол-во команд
+
 		vector<vector<string>> month(_lengths.size());
+
 		for (int i = 0; i < _lengths.size(); ++i)
 		{
 			month[i] = vector<string>(_lengths[i]);
 		}
+
 		for (int i = 0; i < count; ++i)
 		{
 			string command = "";
@@ -28,13 +31,16 @@ public:
 				int num = 0;
 				string action;
 				cin >> num >> action;
-
+				num--;
+				month[num].push_back(action);
 			}
+
 			if (command == "DUMP")
 			{
 				int num = 0;
 				cin >> num;
 			}
+
 			if (command == "NEXT")
 			{
 
