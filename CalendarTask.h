@@ -12,9 +12,11 @@ private:
 public:
 	static void DoIt()
 	{
+		int monthCounter = 0;
+
 		int count; cin >> count; //Кол-во команд
 
-		vector<vector<string>> month(_lengths.size());
+		vector<vector<string>> month(_lengths[monthCounter]);
 
 		for (int i = 0; i < _lengths.size(); ++i)
 		{
@@ -39,11 +41,27 @@ public:
 			{
 				int num = 0;
 				cin >> num;
+				num--;
+				for (const auto& x : month[num])
+				{
+					cout << x << " ";
+				}
+				cout << endl;
 			}
 
 			if (command == "NEXT")
 			{
+				const int previousLength = _lengths[monthCounter];
+				
+				monthCounter = (monthCounter + 1) % 12;
 
+				const int newLength = _lengths[monthCounter];
+			
+				if (newLength < previousLength)
+				{
+
+				}
+				month.resize(newLength);
 			}
 		}
 	}
