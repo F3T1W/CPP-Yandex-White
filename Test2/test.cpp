@@ -22,6 +22,8 @@
 
 #include "../../CPP-Yandex-White/QueueTask.h"
 
+#include "../../CPP-Yandex-White/CalendarTask.h"
+
 using namespace std;
 
 #pragma endregion
@@ -171,6 +173,20 @@ TEST(QUEUE, QUEUE0)
 	cin.rdbuf(oss.rdbuf());
 	string check = QueueTask::QueueTest();
 	EXPECT_EQ(true, check == "12");
+}
+*/
+#pragma endregion
+
+#pragma region Calendar
+/*
+TEST(CALENDAR, CALENDAR0)
+{
+	streambuf* backup;
+	istringstream oss("12 ADD 5 Salary ADD 31 Walk ADD 30 WalkPreparations NEXT DUMP 5 DUMP 28 NEXT DUMP 31 DUMP 30 DUMP 28 ADD 28 Payment DUMP 28");
+	backup = cin.rdbuf();
+	cin.rdbuf(oss.rdbuf());
+	CalendarTask::DoIt();
+	EXPECT_EQ(true, true);
 }
 */
 #pragma endregion

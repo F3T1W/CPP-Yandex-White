@@ -7,61 +7,58 @@ using namespace std;
 
 class CalendarTask
 {
-private:
-	inline static const std::array<int, 12> _lengths = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 public:
 	static void DoIt()
 	{
-		int monthCounter = 0;
+		const vector<int> months =
+		{ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+		const int lenSize = months.size(); // Кол-во месяцев и дней в них
+
+		int monthCounter = 0; //Индекс текущего месяца
 
 		int count; cin >> count; //Кол-во команд
 
-		vector<vector<string>> month(_lengths[monthCounter]);
-
-		for (int i = 0; i < _lengths.size(); ++i)
-		{
-			month[i] = vector<string>(_lengths[i]);
-		}
+		vector<vector<string>> month(months[monthCounter]); // Календарь
 
 		for (int i = 0; i < count; ++i)
 		{
-			string command = "";
-			cin >> command;
+			string command = ""; cin >> command; // Команды
 
-			if (command == "ADD")
-			{ 
-				int num = 0;
-				string action;
-				cin >> num >> action;
-				num--;
-				month[num].push_back(action);
+			if (command == "ADD") // Добавляем
+			{
+				int day; string task; cin >> day >> task; --day; // элементы вектора нумеруются с нуля
+				month[day].push_back(task);
 			}
 
-			if (command == "DUMP")
+			if (command == "DUMP") // Выводим
 			{
-				int num = 0;
-				cin >> num;
-				num--;
-				for (const auto& x : month[num])
+				int num = 0; cin >> num; num--; // Число вывода тасков
+				cout << month[num].size() << " ";
+				for (const auto& x : month[num]) //Вывод каждого таска
 				{
 					cout << x << " ";
 				}
-				cout << endl;
+				cout << endl; // Перевод строки
 			}
 
-			if (command == "NEXT")
+			if (command == "NEXT") // Перейти на следующий месяц
 			{
-				const int previousLength = _lengths[monthCounter];
-				
-				monthCounter = (monthCounter + 1) % 12;
+				const int previousLength = months[monthCounter]; // Длина прошлого месяца
 
-				const int newLength = _lengths[monthCounter];
-			
-				if (newLength < previousLength)
+				monthCounter = (monthCounter + 1) % lenSize; // Проверка на превышение 12ти месяцев
+
+				const int newLength = months[monthCounter]; // Длина нового месяца
+
+				if (newLength < previousLength) // Новая длина меньше прошлой длины
 				{
-
+					for (int day = newLength; day < previousLength; ++day) // Всю херню с отстутствующих дней на последний день нового
+					{
+						month[newLength - 1].insert(end(month[newLength - 1]),
+							begin(month[day]), end(month[day]));
+					}
 				}
-				month.resize(newLength);
+				month.resize(newLength); // Удаляем ненужное
 			}
 		}
 	}
