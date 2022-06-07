@@ -144,7 +144,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Annagrammas.cpp" />
+    <ClCompile Include="BusStops.cpp" />
+    <ClCompile Include="BusStops2.cpp" />
     <ClCompile Include="CalendarTask.cpp" />
+    <ClCompile Include="CapitalMap.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="FactorialTask.cpp" />
     <ClCompile Include="MaximizatorTask.cpp" />
@@ -157,7 +161,11 @@
     <ClCompile Include="VectorPalindrom.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Annagrammas.h" />
+    <ClInclude Include="BusStops.h" />
+    <ClInclude Include="BusStops2.h" />
     <ClInclude Include="CalendarTask.h" />
+    <ClInclude Include="CapitalMap.h" />
     <ClInclude Include="FactorialTask.h" />
     <ClInclude Include="MaximizatorTask.h" />
     <ClInclude Include="MiddleTemperatureTask.h" />

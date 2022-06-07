@@ -24,6 +24,14 @@
 
 #include "../../CPP-Yandex-White/CalendarTask.h"
 
+#include "../../CPP-Yandex-White/Annagrammas.h"
+
+#include "../../CPP-Yandex-White/CapitalMap.h"
+
+#include "../../CPP-Yandex-White/BusStops.h"
+
+#include "../../CPP-Yandex-White/BusStops2.h"
+
 using namespace std;
 
 #pragma endregion
@@ -189,4 +197,54 @@ TEST(CALENDAR, CALENDAR0)
 	EXPECT_EQ(true, true);
 }
 */
+#pragma endregion
+
+#pragma region Anagrama
+/*
+TEST(ANNAGRAMA, ANNAGRAMA0) {
+	streambuf* backup;
+	istringstream oss("3 eat tea find search master stream");
+	backup = cin.rdbuf();
+	cin.rdbuf(oss.rdbuf());
+	EXPECT_EQ(Annagrammas::DOITTest() == "YESNOYES", true);
+}
+*/
+#pragma endregion
+
+#pragma region CapitalMap
+/*
+TEST(CAPITAL, CAPITAL0)
+{
+	streambuf* backup;
+	istringstream oss("24 RENAME FakeCountry FarFarAway ABOUT FarFarAway DUMP CHANGE_CAPITAL TsardomOfRussia Moscow CHANGE_CAPITAL TsardomOfRussia Moscow CHANGE_CAPITAL ColonialBrazil Salvador CHANGE_CAPITAL TsardomOfRussia SaintPetersburg RENAME TsardomOfRussia RussianEmpire CHANGE_CAPITAL RussianEmpire Moscow CHANGE_CAPITAL RussianEmpire SaintPetersburg CHANGE_CAPITAL ColonialBrazil RioDeJaneiro DUMP RENAME ColonialBrazil EmpireOfBrazil ABOUT RussianEmpire RENAME EmpireOfBrazil UnitedStatesOfBrazil CHANGE_CAPITAL RussianEmpire Petrograd RENAME RussianEmpire RussianRepublic RENAME RussianRepublic USSR CHANGE_CAPITAL USSR Moscow CHANGE_CAPITAL UnitedStatesOfBrazil Brasilia RENAME UnitedStatesOfBrazil FederativeRepublicOfBrazil ABOUT RussianEmpire DUMP RENAME USSR USSR");
+	backup = cin.rdbuf();
+	cin.rdbuf(oss.rdbuf());
+	CapitalMap::CapitalTask();
+	EXPECT_EQ(true, true);
+
+}
+*/
+#pragma endregion
+
+#pragma region BusStops
+/*
+TEST(BUS, BUS0)
+{
+	streambuf* backup;
+	istringstream oss("10 ALL_BUSES BUSES_FOR_STOP Marushkino STOPS_FOR_BUS 32K NEW_BUS 32 3 Tolstopaltsevo Marushkino Vnukovo NEW_BUS 32K 6 Tolstopaltsevo Marushkino Vnukovo Peredelkino Solntsevo Skolkovo BUSES_FOR_STOP Vnukovo NEW_BUS 950 6 Kokoshkino Marushkino Vnukovo Peredelkino Solntsevo Troparyovo NEW_BUS 272 4 Vnukovo Moskovsky Rumyantsevo Troparyovo STOPS_FOR_BUS 272 ALL_BUSES");
+	backup = cin.rdbuf();
+	cin.rdbuf(oss.rdbuf());
+	BusStops::DoIt();
+	EXPECT_EQ(true, true);
+}
+*/
+#pragma endregion
+
+#pragma region BusStops2
+TEST(BUS, BUS20) {
+	istringstream iss("4 2 Marushkino Kokoshkino 1 Kokoshkino 2 Marushkino Kokoshkino 2 Kokoshkino Marushkino");
+	ostringstream oss;
+	BusStops2::DoIt(iss, oss);
+	EXPECT_EQ(oss.str(), "New bus 1\nNew bus 2\nAlready exists for 1\nNew bus 3\n");
+}
 #pragma endregion
