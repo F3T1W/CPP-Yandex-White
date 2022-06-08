@@ -12,6 +12,7 @@ public:
 			if (str[i] != str[str.length() - 1 - i])
 			{
 				IsPali = false;
+				break;
 			}
 		}
 		return IsPali;
