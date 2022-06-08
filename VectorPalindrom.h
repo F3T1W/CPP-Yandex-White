@@ -19,6 +19,7 @@ public:
 				if (x[i] != x[x.length() - 1 - i])
 				{
 					IsPali = false;
+					break;
 				}
 			}
 			if (IsPali) returning.push_back(x);
