@@ -13,14 +13,7 @@ public:
 		std::vector<int> oneNull;
 		while (x > 1)
 		{
-			if (x % 2 == 0)
-			{
-				oneNull.push_back(0);
-			}
-			else
-			{
-				oneNull.push_back(1);
-			}
+			oneNull.push_back(x % 2);
 			x /= 2;
 		}
 		oneNull.push_back(1);
