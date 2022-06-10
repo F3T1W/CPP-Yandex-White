@@ -5,25 +5,17 @@
 class SecondF
 {
 public:
-	static short FindSecond(std::string x)
-	{
-		std::vector<int> index;
-		short i = 0;
-		for (char p : x)
-		{
-			if (p == 'f')
-			{
-				index.push_back(i);
-			}
-			i++;
-		}
-		if (index.size() == 0)
-		{
-			std::cout << -2;
-			return -2;
-		}
-		(index.size() == 1) ? std::cout << -1 : std::cout << (index[1]);
-		return (index.size() == 1) ? -1 : index[1];
-	}
+    static size_t FindSecond(std::string x)
+    {
+        size_t first_f = x.find('f');
+        if (first_f == std::string::npos) { // npos аналог .end, можешь почитать доку на std::string::find
+            return -2;
+        }
+        size_t second_f = x.find('f', first_f + 1);
+        if (second_f == std::string::npos) {
+            return -1;
+        }
+        return second_f;
+    }
 };
 
