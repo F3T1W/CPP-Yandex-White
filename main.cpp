@@ -1,12 +1,25 @@
-#include "BusStops2.h"
 #include <iostream>
-#include <sstream>
+#include <string>
+#include <set>
+#include <iostream>
 
 using namespace std;
 
+static void Count();
+
 int main()
 {
-	istringstream iss("4 2 Marushkino Kokoshkino 1 Kokoshkino 2 Marushkino Kokoshkino 2 Kokoshkino Marushkino");
-	ostringstream oss;
-	BusStops2::DoIt(iss, oss);
+	Count();
+}
+
+static void Count()
+{
+	int countString; cin >> countString;
+	set<string> strings;
+	for (int i = 0; i < countString; ++i)
+	{
+		string temp; cin >> temp;
+		strings.insert(temp);
+	}
+	cout << strings.size();
 }

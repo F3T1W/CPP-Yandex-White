@@ -157,6 +157,7 @@
     <ClCompile Include="QueueTask.cpp" />
     <ClCompile Include="ReverseVector.cpp" />
     <ClCompile Include="ReverseVector2.cpp" />
+    <ClCompile Include="UniqueString.cpp" />
     <ClCompile Include="VectorMoving.cpp" />
     <ClCompile Include="VectorPalindrom.cpp" />
   </ItemGroup>
@@ -173,6 +174,7 @@
     <ClInclude Include="QueueTask.h" />
     <ClInclude Include="ReverseVector.h" />
     <ClInclude Include="ReverseVector2.h" />
+    <ClInclude Include="UniqueString.h" />
     <ClInclude Include="VectorMoving.h" />
     <ClInclude Include="VectorPalindrom.h" />
   </ItemGroup>

@@ -31,6 +31,12 @@
     <Filter Include="Файлы заголовков\Map">
       <UniqueIdentifier>{b57007e5-f703-4cc1-b9b5-a39f0419ca17}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Set">
+      <UniqueIdentifier>{9bb8ef6f-0393-42ca-a162-c6b8825b630c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Set">
+      <UniqueIdentifier>{c81bdae2-1bdd-4915-85f8-542ef9fd9aa0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -78,6 +84,9 @@
     <ClCompile Include="CapitalMap.cpp">
       <Filter>Исходные файлы\Map</Filter>
     </ClCompile>
+    <ClCompile Include="UniqueString.cpp">
+      <Filter>Исходные файлы\Set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MiddleTemperatureTask.h">
@@ -121,6 +130,9 @@
     </ClInclude>
     <ClInclude Include="CapitalMap.h">
       <Filter>Файлы заголовков\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="UniqueString.h">
+      <Filter>Файлы заголовков\Set</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

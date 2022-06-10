@@ -32,6 +32,8 @@
 
 #include "../../CPP-Yandex-White/BusStops2.h"
 
+#include "../../CPP-Yandex-White/UniqueString.h"
+
 using namespace std;
 
 #pragma endregion
@@ -241,10 +243,22 @@ TEST(BUS, BUS0)
 #pragma endregion
 
 #pragma region BusStops2
+/*
 TEST(BUS, BUS20) {
 	istringstream iss("4 2 Marushkino Kokoshkino 1 Kokoshkino 2 Marushkino Kokoshkino 2 Kokoshkino Marushkino");
 	ostringstream oss;
 	BusStops2::DoIt(iss, oss);
 	EXPECT_EQ(oss.str(), "New bus 1\nNew bus 2\nAlready exists for 1\nNew bus 3\n");
+}
+*/
+#pragma endregion
+
+#pragma region UniqueString
+TEST(UNIQUESTRING, UNIQUESTRING0)
+{
+	istringstream iss("6 first second first third second second");
+	ostringstream oss;
+	UniqueString::Count(iss, oss);
+	EXPECT_EQ(oss.str(), "3");
 }
 #pragma endregion
