@@ -34,6 +34,10 @@
 
 #include "../../CPP-Yandex-White/UniqueString.h"
 
+#include "../../CPP-Yandex-White/Sinonim.h"
+
+#include "../../CPP-Yandex-White/BusStops3.h"
+
 using namespace std;
 
 #pragma endregion
@@ -254,11 +258,35 @@ TEST(BUS, BUS20) {
 #pragma endregion
 
 #pragma region UniqueString
+/*
 TEST(UNIQUESTRING, UNIQUESTRING0)
 {
 	istringstream iss("6 first second first third second second");
 	ostringstream oss;
 	UniqueString::Count(iss, oss);
 	EXPECT_EQ(oss.str(), "3");
+}
+*/
+#pragma endregion
+
+#pragma region Sinonim
+/*
+TEST(SINONIM, SINONIM0)
+{
+	istringstream iss("8 ADD program code COUNT cipher ADD code cipher COUNT code COUNT program CHECK code program CHECK program cipher CHECK cpp java");
+	ostringstream oss;
+	Sinonim::SinonimCheck(iss, oss);
+	EXPECT_EQ(oss.str(), "0\n2\n1\nYES\nNO\nNO\n");
+}
+*/
+#pragma endregion
+
+#pragma region BusStops3
+TEST(BUSSTOPS, BUSSTOPS3_0)
+{
+	istringstream iss("5 2 Marushkino Kokoshkino 1 Kokoshkino 2 Marushkino Kokoshkino 2 Kokoshkino Marushkino 2 Kokoshkino Kokoshkino");
+	ostringstream oss;
+	BusStops3::DoIt(iss, oss);
+	EXPECT_EQ(oss.str(), "New bus 1\nNew bus 2\nAlready exists for 1\nAlready exists for 1\nAlready exists for 2\n");
 }
 #pragma endregion

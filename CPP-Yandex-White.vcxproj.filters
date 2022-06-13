@@ -87,6 +87,15 @@
     <ClCompile Include="UniqueString.cpp">
       <Filter>Исходные файлы\Set</Filter>
     </ClCompile>
+    <ClCompile Include="MapValuesSet.cpp">
+      <Filter>Исходные файлы\Set</Filter>
+    </ClCompile>
+    <ClCompile Include="Sinonim.cpp">
+      <Filter>Исходные файлы\Set</Filter>
+    </ClCompile>
+    <ClCompile Include="BusStops3.cpp">
+      <Filter>Исходные файлы\Set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MiddleTemperatureTask.h">
@@ -132,6 +141,15 @@
       <Filter>Файлы заголовков\Map</Filter>
     </ClInclude>
     <ClInclude Include="UniqueString.h">
+      <Filter>Файлы заголовков\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="MapValuesSet.h">
+      <Filter>Файлы заголовков\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="Sinonim.h">
+      <Filter>Файлы заголовков\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="BusStops3.h">
       <Filter>Файлы заголовков\Set</Filter>
     </ClInclude>
   </ItemGroup>
