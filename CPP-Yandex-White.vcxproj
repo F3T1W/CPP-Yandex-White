@@ -144,45 +144,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Annagrammas.cpp" />
-    <ClCompile Include="BusStops.cpp" />
-    <ClCompile Include="BusStops2.cpp" />
-    <ClCompile Include="BusStops3.cpp" />
-    <ClCompile Include="CalendarTask.cpp" />
-    <ClCompile Include="CapitalMap.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="FactorialTask.cpp" />
-    <ClCompile Include="MapValuesSet.cpp" />
-    <ClCompile Include="MaximizatorTask.cpp" />
-    <ClCompile Include="MiddleTemperatureTask.cpp" />
-    <ClCompile Include="PalindromTask.cpp" />
-    <ClCompile Include="QueueTask.cpp" />
-    <ClCompile Include="ReverseVector.cpp" />
-    <ClCompile Include="ReverseVector2.cpp" />
-    <ClCompile Include="Sinonim.cpp" />
-    <ClCompile Include="UniqueString.cpp" />
-    <ClCompile Include="VectorMoving.cpp" />
-    <ClCompile Include="VectorPalindrom.cpp" />
+    <ClCompile Include="SortAbs.cpp" />
+    <ClCompile Include="SortLower.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Annagrammas.h" />
-    <ClInclude Include="BusStops.h" />
-    <ClInclude Include="BusStops2.h" />
-    <ClInclude Include="BusStops3.h" />
-    <ClInclude Include="CalendarTask.h" />
-    <ClInclude Include="CapitalMap.h" />
-    <ClInclude Include="FactorialTask.h" />
-    <ClInclude Include="MapValuesSet.h" />
-    <ClInclude Include="MaximizatorTask.h" />
-    <ClInclude Include="MiddleTemperatureTask.h" />
-    <ClInclude Include="PalindromTask.h" />
-    <ClInclude Include="QueueTask.h" />
-    <ClInclude Include="ReverseVector.h" />
-    <ClInclude Include="ReverseVector2.h" />
-    <ClInclude Include="Sinonim.h" />
-    <ClInclude Include="UniqueString.h" />
-    <ClInclude Include="VectorMoving.h" />
-    <ClInclude Include="VectorPalindrom.h" />
+    <ClInclude Include="SortAbs.h" />
+    <ClInclude Include="SortLower.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

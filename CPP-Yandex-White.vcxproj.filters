@@ -13,28 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Исходные файлы\Vector">
-      <UniqueIdentifier>{c8634f2b-b7de-4f60-8280-5b9cfe7e7b67}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Vector">
-      <UniqueIdentifier>{67489be6-5f08-4d93-bea9-3f19195c3a72}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Functions">
-      <UniqueIdentifier>{84966b2c-1239-4ade-af0c-dc2a662f4680}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Functions">
-      <UniqueIdentifier>{b4d93917-a3e0-4c1f-bfc0-5385e1c270a9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Map">
-      <UniqueIdentifier>{5d538e32-6e89-4b10-92c7-828363ec7c57}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Map">
-      <UniqueIdentifier>{b57007e5-f703-4cc1-b9b5-a39f0419ca17}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Set">
+    <Filter Include="Исходные файлы\Alg">
       <UniqueIdentifier>{9bb8ef6f-0393-42ca-a162-c6b8825b630c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Set">
+    <Filter Include="Файлы заголовков\Alg">
       <UniqueIdentifier>{c81bdae2-1bdd-4915-85f8-542ef9fd9aa0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -42,115 +24,19 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="MiddleTemperatureTask.cpp">
-      <Filter>Исходные файлы\Vector</Filter>
+    <ClCompile Include="SortAbs.cpp">
+      <Filter>Исходные файлы\Alg</Filter>
     </ClCompile>
-    <ClCompile Include="QueueTask.cpp">
-      <Filter>Исходные файлы\Vector</Filter>
-    </ClCompile>
-    <ClCompile Include="CalendarTask.cpp">
-      <Filter>Исходные файлы\Vector</Filter>
-    </ClCompile>
-    <ClCompile Include="FactorialTask.cpp">
-      <Filter>Исходные файлы\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="MaximizatorTask.cpp">
-      <Filter>Исходные файлы\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="PalindromTask.cpp">
-      <Filter>Исходные файлы\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="ReverseVector.cpp">
-      <Filter>Исходные файлы\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="ReverseVector2.cpp">
-      <Filter>Исходные файлы\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="VectorMoving.cpp">
-      <Filter>Исходные файлы\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="VectorPalindrom.cpp">
-      <Filter>Исходные файлы\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="Annagrammas.cpp">
-      <Filter>Исходные файлы\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="BusStops.cpp">
-      <Filter>Исходные файлы\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="BusStops2.cpp">
-      <Filter>Исходные файлы\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="CapitalMap.cpp">
-      <Filter>Исходные файлы\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="UniqueString.cpp">
-      <Filter>Исходные файлы\Set</Filter>
-    </ClCompile>
-    <ClCompile Include="MapValuesSet.cpp">
-      <Filter>Исходные файлы\Set</Filter>
-    </ClCompile>
-    <ClCompile Include="Sinonim.cpp">
-      <Filter>Исходные файлы\Set</Filter>
-    </ClCompile>
-    <ClCompile Include="BusStops3.cpp">
-      <Filter>Исходные файлы\Set</Filter>
+    <ClCompile Include="SortLower.cpp">
+      <Filter>Исходные файлы\Alg</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MiddleTemperatureTask.h">
-      <Filter>Файлы заголовков\Vector</Filter>
+    <ClInclude Include="SortAbs.h">
+      <Filter>Файлы заголовков\Alg</Filter>
     </ClInclude>
-    <ClInclude Include="QueueTask.h">
-      <Filter>Файлы заголовков\Vector</Filter>
-    </ClInclude>
-    <ClInclude Include="CalendarTask.h">
-      <Filter>Файлы заголовков\Vector</Filter>
-    </ClInclude>
-    <ClInclude Include="FactorialTask.h">
-      <Filter>Файлы заголовков\Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="MaximizatorTask.h">
-      <Filter>Файлы заголовков\Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="PalindromTask.h">
-      <Filter>Файлы заголовков\Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="ReverseVector.h">
-      <Filter>Файлы заголовков\Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="ReverseVector2.h">
-      <Filter>Файлы заголовков\Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="VectorMoving.h">
-      <Filter>Файлы заголовков\Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="VectorPalindrom.h">
-      <Filter>Файлы заголовков\Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="Annagrammas.h">
-      <Filter>Файлы заголовков\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="BusStops.h">
-      <Filter>Файлы заголовков\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="BusStops2.h">
-      <Filter>Файлы заголовков\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="CapitalMap.h">
-      <Filter>Файлы заголовков\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="UniqueString.h">
-      <Filter>Файлы заголовков\Set</Filter>
-    </ClInclude>
-    <ClInclude Include="MapValuesSet.h">
-      <Filter>Файлы заголовков\Set</Filter>
-    </ClInclude>
-    <ClInclude Include="Sinonim.h">
-      <Filter>Файлы заголовков\Set</Filter>
-    </ClInclude>
-    <ClInclude Include="BusStops3.h">
-      <Filter>Файлы заголовков\Set</Filter>
+    <ClInclude Include="SortLower.h">
+      <Filter>Файлы заголовков\Alg</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
