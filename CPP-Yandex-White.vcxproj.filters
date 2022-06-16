@@ -19,6 +19,12 @@
     <Filter Include="Файлы заголовков\Alg">
       <UniqueIdentifier>{c81bdae2-1bdd-4915-85f8-542ef9fd9aa0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Class">
+      <UniqueIdentifier>{c85a1e91-0c80-4be0-99da-6cb375598485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Class">
+      <UniqueIdentifier>{2ed34157-4a66-46e3-b851-d77a91ef5830}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -30,6 +36,12 @@
     <ClCompile Include="SortLower.cpp">
       <Filter>Исходные файлы\Alg</Filter>
     </ClCompile>
+    <ClCompile Include="SortedStrings.cpp">
+      <Filter>Исходные файлы\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="NameSurname0.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SortAbs.h">
@@ -37,6 +49,12 @@
     </ClInclude>
     <ClInclude Include="SortLower.h">
       <Filter>Файлы заголовков\Alg</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedStrings.h">
+      <Filter>Файлы заголовков\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="NameSurname0.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

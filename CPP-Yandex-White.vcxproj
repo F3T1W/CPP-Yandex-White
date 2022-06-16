@@ -145,11 +145,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NameSurname0.cpp" />
     <ClCompile Include="SortAbs.cpp" />
+    <ClCompile Include="SortedStrings.cpp" />
     <ClCompile Include="SortLower.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="NameSurname0.h" />
     <ClInclude Include="SortAbs.h" />
+    <ClInclude Include="SortedStrings.h" />
     <ClInclude Include="SortLower.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
