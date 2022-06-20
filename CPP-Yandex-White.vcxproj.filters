@@ -40,7 +40,7 @@
       <Filter>Исходные файлы\Class</Filter>
     </ClCompile>
     <ClCompile Include="NameSurname0.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Class</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,7 +54,7 @@
       <Filter>Файлы заголовков\Class</Filter>
     </ClInclude>
     <ClInclude Include="NameSurname0.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\Class</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

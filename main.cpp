@@ -1,24 +1,10 @@
 #include <string>
-#include <vector>
+#include <map>
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
-class SortedStrings
+int main()
 {
-public:
-    void AddString(const string& s)
-    {
-        inner.push_back(s);
-    }
 
-    vector<string> GetSortedStrings()
-    {
-        sort(begin(inner), end(inner));
-        return inner;
-    }
-
-private:
-    vector<string> inner;
-};
+}
