@@ -42,6 +42,9 @@
     <ClCompile Include="NameSurname0.cpp">
       <Filter>Исходные файлы\Class</Filter>
     </ClCompile>
+    <ClCompile Include="NameSurname1.cpp">
+      <Filter>Исходные файлы\Class</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SortAbs.h">
@@ -54,6 +57,9 @@
       <Filter>Файлы заголовков\Class</Filter>
     </ClInclude>
     <ClInclude Include="NameSurname0.h">
+      <Filter>Файлы заголовков\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="NameSurname1.h">
       <Filter>Файлы заголовков\Class</Filter>
     </ClInclude>
   </ItemGroup>

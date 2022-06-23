@@ -6,7 +6,7 @@
 
 #include "../../CPP-Yandex-White/SortAbs.h"
 
-#include "../../CPP-Yandex-White/SortLower.h"
+#include "../SortLower.h"
 #include "../SortedStrings.h"
 #include "../NameSurname0.h"
 
